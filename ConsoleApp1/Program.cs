@@ -11,7 +11,8 @@ namespace ConsoleApp1 // Note: actual namespace depends on the project name.
             Авторизация = 2,
             Генерацияперсонажа = 3,
             Бой = 4,
-            Выход = 5
+          
+          
         }
         static void Main(string[] args)
         {
@@ -19,7 +20,6 @@ namespace ConsoleApp1 // Note: actual namespace depends on the project name.
             Console.WriteLine($"{GAME.Авторизация} {(int)GAME.Авторизация}.");
             Console.WriteLine($"{GAME.Генерацияперсонажа} {(int)GAME.Генерацияперсонажа}.");
             Console.WriteLine($"{GAME.Бой} {(int)GAME.Бой}.");
-            Console.WriteLine($"{GAME.Выход} {(int)GAME.Выход}.");
             string input = Console.ReadLine();
             GAME number = (GAME)int.Parse(input);
             Console.WriteLine($"Вы выбрали {number}.");
